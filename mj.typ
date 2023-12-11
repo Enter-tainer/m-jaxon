@@ -8,7 +8,7 @@ Typst, now with *MathJax*.
 
 The equation of mass-energy equivalence is often written as $E=m c^2$ in modern physics.
 
-But we can also write it using M-Jaxon as: #m-jaxon.render(`E = mc^2`, inline: true), which is `#m-jaxon.render(`E = mc^2`, inline: true)`
+But we can also write it using M-Jaxon as: #m-jaxon.render(`E = mc^2`, inline: true), which is ```#m-jaxon.render(`E = mc^2`, inline: true)```
 
 
 #let code = ```
