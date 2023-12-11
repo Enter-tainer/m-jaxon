@@ -1,7 +1,7 @@
 #import "./typst-package/lib.typ" as m-jaxon
 // Uncomment the following line to use the m-jaxon from the official package registry
 // #import "@preview/m-jaxon:0.1.1"
-#set page(height: auto, width: auto, margin: 2em)
+#set page(height: auto, width: auto, margin: 2em, fill: white)
 #set text(size: 14pt)
 
 = M-Jaxon
