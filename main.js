@@ -9,12 +9,13 @@ import { RegisterHTMLHandler } from 'mathjax-full/js/handlers/html.js';
 
 import { AllPackages } from 'mathjax-full/js/input/tex/AllPackages.js';
 
-export default function render(src, inline) {
+export default function render(src, inline, font_size) {
   //
   //  Minimal CSS needed for stand-alone image
   //
   const CSS = [
     'svg a{fill:blue;stroke:blue}',
+    `svg {font-size: ${font_size}px}`,
     '[data-mml-node="merror"]>g{fill:red;stroke:red}',
     '[data-mml-node="merror"]>rect[data-background]{fill:yellow;stroke:none}',
     '[data-frame],[data-line]{stroke-width:70px;fill:none}',
