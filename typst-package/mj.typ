@@ -9,9 +9,9 @@
 })
 
 #let get-text(src) = {
-  if type(src) == "str" {
+  if type(src) == str {
     src
-  } else if type(src) == "content" {
+  } else if type(src) == content {
     src.text
   }
 }
