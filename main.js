@@ -41,9 +41,15 @@ export default function render(src, inline, font_size) {
     display: !inline,
   });
   let res = adaptor.innerHTML(node);
-  // <svg style="vertical-align: -0.186ex;"
-  // extract -0.186 from the svg
-  const vertical_align = parseFloat(res.match(/<svg style="vertical-align: ([^;]+)ex;/)[1]);
+  let vertical_align = (() => {
+    const match = res.match(/<svg style="vertical-align: ([^;]+);/)[1]
+    if (match.endsWith('ex')) {
+      return parseFloat(match.slice(0, -2))
+    } else {
+      return 0
+    }
+  })();
+
   res = res.replace(/<defs>/, `<defs><style>${CSS}</style>`)
   return {
     svg: res,

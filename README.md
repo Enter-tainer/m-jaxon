@@ -11,7 +11,7 @@ And it is **slow**. To actually convert LaTeX equations to typst ones, you shoul
 ````typ
 #import "./typst-package/lib.typ" as m-jaxon
 // Uncomment the following line to use the m-jaxon from the official package registry
-// #import "@preview/m-jaxon:0.1.0"
+// #import "@preview/m-jaxon:0.1.1"
 
 = M-Jaxon
 
